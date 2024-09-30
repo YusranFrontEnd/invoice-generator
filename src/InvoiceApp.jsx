@@ -147,16 +147,6 @@ const InvoiceApp = () => {
 
   return (
     <div>
-      <h1>Invoice Generator</h1>
-
-      <label>
-        <p>Tanggal</p>
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-      </label>
       <br />
       <label>
         <p>No.Invoice</p>
@@ -187,7 +177,15 @@ const InvoiceApp = () => {
           placeholder="Total angkut: 25,109,125"
         />
       </label>
-      <br />
+
+      <label>
+        <p>Tanggal</p>
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        />
+      </label>
 
       {/* Input untuk bulan dan tahun */}
       <label>
@@ -198,7 +196,7 @@ const InvoiceApp = () => {
           onChange={(e) => setBulan(e.target.value)}
         />
       </label>
-      <br />
+
       <label>
         <p>Tahun</p>
         <input
